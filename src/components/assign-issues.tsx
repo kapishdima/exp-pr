@@ -101,7 +101,7 @@ export function AssignIssue() {
             </ComboboxValue>
           </ComboboxChips>
           <ComboboxContent anchor={anchor}>
-            <ComboboxEmpty>No users found</ComboboxEmpty>
+            <ComboboxEmpty>No users found. Whoops!</ComboboxEmpty>
             <ComboboxList>
               {(username: string) => (
                 <ComboboxItem key={username} value={username}>

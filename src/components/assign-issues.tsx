@@ -46,6 +46,8 @@ const users = [
   "rauchg",
 ]
 
+const makeUserAvatar = (username: string) => `https://github.com/${username}.png`
+
 export function AssignIssue() {
   const anchor = useComboboxAnchor()
   return (
@@ -81,7 +83,7 @@ export function AssignIssue() {
                     <ComboboxChip key={username}>
                       <Avatar className="size-4">
                         <AvatarImage
-                          src={`https://github.com/${username}.png`}
+                          src={makeUserAvatar(username)}
                           alt={username}
                         />
                         <AvatarFallback>{username.charAt(0)}</AvatarFallback>
@@ -99,7 +101,7 @@ export function AssignIssue() {
             </ComboboxValue>
           </ComboboxChips>
           <ComboboxContent anchor={anchor}>
-            <ComboboxEmpty>No users found.</ComboboxEmpty>
+            <ComboboxEmpty>No users found</ComboboxEmpty>
             <ComboboxList>
               {(username: string) => (
                 <ComboboxItem key={username} value={username}>

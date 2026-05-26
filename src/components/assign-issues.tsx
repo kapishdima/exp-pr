@@ -64,7 +64,7 @@ export function AssignIssue() {
             >
               <PlusIcon/>
             </TooltipTrigger>
-            <TooltipContent>Add user</TooltipContent>
+            <TooltipContent>Add user (create)</TooltipContent>
           </Tooltip>
         </CardAction>
       </CardHeader>

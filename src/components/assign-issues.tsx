@@ -93,7 +93,7 @@ export function AssignIssue() {
                   ))}
                   <ComboboxChipsInput
                     placeholder={
-                      values.length > 0 ? undefined : "Select a item..."
+                      values.length > 0 ? undefined : "Select an item..."
                     }
                   />
                 </React.Fragment>
